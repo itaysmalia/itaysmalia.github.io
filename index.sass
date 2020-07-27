@@ -1,0 +1,33 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap'
+
+*
+    font-family: 'Poppins', sans-serif
+
+html
+    scroll-behavior: smooth
+body
+    color: white
+
+section
+    background-image: url('/media/images/photography-of-macbook-half-opened-on-white-wooden-surface-633409.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    min-height: 100vh
+#hero
+    display: grid
+    grid-template: auto 1fr auto / 1fr
+    place-items: center
+    #name
+        width: fit-content
+        -moz-width: fit-content
+        font-size: 9rem
+        margin: 5rem auto 1rem auto
+        animation-name: hero-h1-animation
+        animation-delay: 400ms
+        animation-duration: 1s
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+        animation-fill-mode: forwards
+
+@keyframes hero-h1-animation
+    100%
+        letter-spacing: 1.2rem
